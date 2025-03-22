@@ -1,99 +1,112 @@
-# 📊 Applying Statistical Modeling to Analyze and Predict Storage Capacity Utilization
+# 🚀 Accelerating ETCD Insertion Operations through Advanced Complexity Reduction
 
 ## 📝 Abstract
-This research introduces a statistical modeling approach to analyze and predict storage capacity utilization in a cutting-edge artifact management platform widely used in DevOps pipelines and agile software development workflows. The platform manages digital assets such as build outputs, dependencies, and container images, where storage capacity is a critical factor. Administrators face challenges in maintaining optimal storage utilization and avoiding unplanned downtimes due to capacity exhaustion.
 
-The proposed solution employs machine learning techniques, specifically univariate linear regression analysis, to predict storage consumption trends. By leveraging historical data from repository logs, the model forecasts future storage requirements, enabling proactive capacity planning and reducing risks associated with storage depletion. The model provides practical solutions for administrators to maintain continuous system operations, improve resource management, and ensure alignment with business objectives.
+This research presents an advanced implementation to optimize ETCD’s insertion operations by significantly reducing computational complexity through novel T-Tree data structures. By improving from an **O(log N)** to an **O(log log N)** time complexity, the study demonstrates substantial improvements in performance, scalability, and efficiency for distributed key-value stores within Kubernetes environments. Comprehensive experimentation validates the system’s improved insertion, deletion, and search operations, offering a high-performance solution for modern cloud-native architectures.
 
 ---
 
 ## 📚 Publication Details
 
-- **Journal**: International Journal of Research and Analytical Reviews (IJRAR)  
-- **Paper Id**: 303596  
-- **Link**: [http://www.ijrar.org/IJRAR19S1828.pdf](http://www.ijrar.org/IJRAR19S1828.pdf)  
-- **ISSN**: 2348-1269  
-- **Impact Factor**: 7.17  
-- **Publication Info**: Volume 7, Issue 1, January 2020  
+- **Journal**: International Journal for Research in Applied Science and Engineering Technology (IJRASET)  
+- **Paper ID**: IJRASET65910  
+- **DOI**: [https://doi.org/10.22214/ijraset.2024.65910](https://doi.org/10.22214/ijraset.2024.65910)  
+- **ISSN**: 2321-9653  
+- **Impact Factor**: 7.429  
+- **Volume/Issue**: Volume 12, Issue XII, December 2024  
+- **Peer-reviewed**: ✅ YES  
 
 ---
 
-## 🚀 Key Contributions
+## 🌟 Key Contributions
 
-✔️ Collected, cleaned, and structured **log data** from Sonatype Nexus Repository Manager (NXRM) using Python (Pandas and NumPy), ensuring data consistency and readiness for advanced analytics.  
-✔️ Designed **system diagrams** and **data visualizations**, including comprehensive tables and graphs, to highlight key data patterns relevant for regression modeling.  
-✔️ Developed and evaluated a **univariate linear regression model** to predict future storage consumption. The model compared actual versus predicted storage usage, providing actionable insights and supporting **proactive storage capacity management**.  
-✔️ Proposed **future research directions**, including the application of multivariate regression analysis to incorporate additional independent variables such as the number of users.
+✅ **Cluster Framework Optimization**  
+- Designed and optimized a high-performance ETCD cluster framework to meet stringent scalability and system requirements.  
+- Configured multi-node clusters (up to 10 nodes), with nodes ranging from 32 CPUs and 64GB RAM (master) to 24 CPUs and 32GB RAM (workers).  
 
----
+✅ **Advanced T-Tree Data Structures in GoLang**  
+- Developed and implemented T-Tree data structures, initially achieving **O(log N)** complexity.  
+- Introduced a novel hierarchical indexing method to reduce complexity further to **O(log log N)** for search and insertion operations.  
+- Enhanced self-balancing properties ensure consistent tree height and rapid operations even with large datasets.
 
-## 🌐 Relevance and Impact
-
-📌 High-quality data preparation ensured **accurate and reliable predictive model development**, laying a strong foundation for data-driven decision-making in storage management.  
-📌 The **system diagrams**, **graphs**, and **tables** offer clear insights into repository usage patterns, aiding administrators in identifying bottlenecks and optimizing storage operations.  
-📌 The **regression model** enables **predictive capacity planning**, minimizing the risks of server downtime, and enhancing **operational efficiency** in distributed architectures.  
-📌 The **proposed methodology** can be extended to accommodate diverse storage environments and workflows, promoting **scalability** and **continuous improvement** in IT infrastructure management.
-
----
-
-## ⚙️ Experimental Results (Summary)
-
-| Day    | Actual Storage Usage (GB) | Predicted Storage Usage (GB) |  
-|--------|---------------------------|------------------------------|  
-| Day 1  | 81                        | 63.80                        |  
-| Day 2  | 58                        | 63.67                        |  
-| Day 3  | 60                        | 63.53                        |  
-| Day 4  | 62                        | 63.40                        |  
-| Day 5  | 54                        | 63.27                        |  
-| Day 6  | 45                        | 63.13                        |  
-| Day 7  | 79                        | 63.00                        |  
-| Day 8  | 61                        | 62.87                        |  
-| Day 9  | 61                        | 62.73                        |  
-| Day 10 | 71                        | 62.60                        |  
-
-- **Intercept (β0)**: 63.93  
-- **Slope (β1)**: -0.1333  
-- **Linear Regression Equation**: `Y = 63.93 - 0.1333 * X`  
-- **Observation**: The model reveals a gradual decline in predicted storage requirements, providing a data-driven baseline for administrators to plan storage expansion or artifact cleanup activities.
+✅ **Implementation & Validation**  
+- Conducted experimental validation comparing traditional **O(log N)** and enhanced **O(log log N)** complexities.  
+- Demonstrated improvements in insertion, deletion, and search times by over **80%** in some cases.  
+- Benchmarked on ETCD data sizes from **16GB to 64GB**.
 
 ---
 
-## 🖼️ System Architecture and Data Flow (Conceptual)
+## 🔎 Relevance and Impact
 
-- **Developer** commits code to GitHub  
-- **Jenkins** triggers a job, builds the artifact  
-- **Artifacts** are pushed to **Sonatype Nexus Repository**  
-  - Snapshot repositories for development artifacts  
-  - Release repositories for production artifacts  
-- **NXRM Logs** capture detailed records of upload, delete, and download operations  
-- **Python-based ETL pipeline** processes logs, extracts key metrics  
-- **Regression Analysis** predicts future storage needs based on historical trends
+🚀 **Enhanced Scalability & Efficiency**  
+- Optimized ETCD insertion operations for Kubernetes deployments, addressing challenges in distributed cloud environments.  
+- Reduces latency and improves throughput in high-load scenarios, making it suitable for enterprise-grade applications.
+
+⚡ **Performance Gains**  
+- Achieved significant improvements in resource utilization, lowering CPU usage and operational costs.  
+- Practical for organizations focused on scaling Kubernetes clusters with optimized data coordination.
+
+📊 **Real-world Applicability**  
+- Provides an effective framework for improving cloud-native data stores, ensuring consistency, availability, and partition tolerance with minimal overhead.
 
 ---
 
-## 🔮 Future Work
+## ⚙️ Experimental Setup & Results
 
-➡️ Extend the current **univariate linear regression model** to a **multivariate regression model**, incorporating factors such as user activity levels, time of day, or artifact types to improve prediction accuracy.  
-➡️ Automate the integration of prediction insights into **continuous monitoring tools** for real-time alerts and proactive capacity management.  
-➡️ Explore **classification algorithms** to identify high-risk repositories that may trigger unexpected storage consumption spikes.
+### Cluster Configuration
+- Master Nodes: 32 CPUs, 64GB RAM, 500GB storage  
+- Worker Nodes: 24 CPUs, 32GB RAM, 350GB storage  
+- ETCD Store Capacities: 16GB, 24GB, 32GB, 40GB, 48GB, 64GB  
+
+### Performance Metrics Comparison  
+#### 📈 O(log N) vs O(log log N)
+
+| Store Size (GB) | Insertion Time (ms) | Deletion Time (ms) | Search Time (ms) |
+|-----------------|---------------------|--------------------|------------------|
+| 16 GB           | 27.25 ➡️ 4.77       | 27.4 ➡️ 4.80      | 27.3 ➡️ 4.78     |
+| 24 GB           | 27.84 ➡️ 4.80       | 27.9 ➡️ 4.83      | 27.87 ➡️ 4.82    |
+| 32 GB           | 28.25 ➡️ 4.82       | 28.3 ➡️ 4.85      | 28.2 ➡️ 4.84     |
+| 40 GB           | 28.58 ➡️ 4.84       | 28.7 ➡️ 4.86      | 28.6 ➡️ 4.85     |
+| 48 GB           | 28.84 ➡️ 4.85       | 28.95 ➡️ 4.87     | 28.9 ➡️ 4.86     |
+| 64 GB           | 29.25 ➡️ 4.87       | 29.35 ➡️ 4.89     | 29.3 ➡️ 4.88     |
+
+🔎 **Key Observations**  
+- Insertion, deletion, and search operations showed consistent time reductions with the **O(log log N)** implementation.  
+- Demonstrated over **80% reduction** in insertion times across all ETCD store sizes.
+
+---
+
+## 📈 Experimental Results (Detailed Summary)
+
+### ETCD Store Size vs Performance (O(log log N) Implementation)
+
+| Store Size (GB) | Insertion Time (ms) | Deletion Time (ms) | Search Time (ms) |
+|-----------------|---------------------|--------------------|------------------|
+| 16 GB           | 4.77                | 4.80              | 4.78             |
+| 24 GB           | 4.80                | 4.83              | 4.82             |
+| 32 GB           | 4.82                | 4.85              | 4.84             |
+| 40 GB           | 4.84                | 4.86              | 4.85             |
+| 48 GB           | 4.85                | 4.87              | 4.86             |
+| 64 GB           | 4.87                | 4.89              | 4.88             |
 
 ---
 
 ## 🔖 Citation
 
-If you use this work, please cite it as follows:
+If you use this work, please cite as:
 
-Satya Ram Tsaliki, Dr. B. Purnachandra Rao. "APPLYING STATISTICAL MODELING TO ANALYZE AND PREDICT STORAGE CAPACITY UTILIZATION". IJRAR - International Journal of Research and Analytical Reviews (IJRAR), E-ISSN 2348-1269, P-ISSN 2349-5138, Volume 7, Issue 1, Pages 518-533, January 2020. Available at: [http://www.ijrar.org/IJRAR19S1828.pdf](http://www.ijrar.org/IJRAR19S1828.pdf)
+> Satya Ram Tsaliki, Dr. B. Purnachandra Rao. "Accelerating ETCD Insertion Operations through Advanced Complexity Reduction", Volume 12, Issue XII, International Journal for Research in Applied Science and Engineering Technology (IJRASET), Pages 796-814, ISSN: 2321-9653. Available at: [https://doi.org/10.22214/ijraset.2024.65910](https://doi.org/10.22214/ijraset.2024.65910)
 
 ```bibtex
-@article{tsaliki2020storage,
-  title={APPLYING STATISTICAL MODELING TO ANALYZE AND PREDICT STORAGE CAPACITY UTILIZATION},
+@article{tsaliki2024etcd,
+  title={Accelerating ETCD Insertion Operations through Advanced Complexity Reduction},
   author={Satya Ram Tsaliki and B. Purnachandra Rao},
-  journal={International Journal of Research and Analytical Reviews (IJRAR)},
-  volume={7},
-  number={1},
-  pages={518-533},
-  year={2020},
-  issn={2348-1269},
-  url={http://www.ijrar.org/IJRAR19S1828.pdf}
+  journal={International Journal for Research in Applied Science and Engineering Technology (IJRASET)},
+  volume={12},
+  number={XII},
+  pages={796-814},
+  year={2024},
+  issn={2321-9653},
+  doi={10.22214/ijraset.2024.65910},
+  url={https://doi.org/10.22214/ijraset.2024.65910}
 }
